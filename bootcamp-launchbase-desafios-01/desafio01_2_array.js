@@ -1,6 +1,6 @@
 const programador = {
     nome: 'Jefferson',
-    idade: 32,
+    idade: 35,
     tecnologias: [
         { nome: 'C++', especialidade: 'Desktop' },
         { nome: 'Python', especialidade: 'Data Science' },
