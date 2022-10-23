@@ -1,0 +1,254 @@
+/*Essa URL é para formatar as letras*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    position: relative;
+}
+
+a{
+    font-weight: 400; 
+    font-size: 16px;
+    color: #111111;
+    /*O "text-decoration" igual a "none" vai retirar o sublinhado de baixo das palavras "Sobre" e "Receitas"*/
+     text-decoration: none;
+}
+
+a:hover{
+    color: #444444;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #111111;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111111;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.container{
+    width: 940px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+    padding: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+
+    min-height: 85vh;
+}
+
+header{
+    margin: 32px 0;
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    grid-template-columns: 240px 1fr;
+    align-items: center;
+}
+
+.menu a{
+    font-size: 16px;
+    color: #111111;
+    margin-right: 30px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #FBDFDB;
+    border-radius: 30px;
+}
+
+.hero .intro{
+    align-self: center;
+    width: 300px;
+    padding: 60px;
+}
+
+.hero .intro h1{
+    font-size: 32px;
+    line-height: 38px;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.hero .intro p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero img{
+    justify-self: center;
+}
+
+main{
+    margin: 50px 0;
+}
+
+main h2{
+    color: #111111;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+main .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 20px;
+}
+
+main .content img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+main .content h4{
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+    margin-bottom: 5px;
+}
+
+main .content p{
+    font-size: 14px;
+    line-height: 16px;
+    color: #777;
+}
+
+.description{
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 20px 0 30px;
+}
+
+.logo{
+    display: flex;
+    margin-right: 120px;
+}
+
+.links{
+    display: flex;
+}
+
+.links a{
+    margin-right: 30px;
+}
+
+.linkActive{
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.recipe-header{
+    text-align: center;
+}
+
+.recipe-header img{
+    border-radius: 15px;
+}
+
+.recipe-header .description_recipe_1{
+    margin: 50px 0;
+}
+
+.description_recipe_1 h1{
+    color: #111111;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.description_recipe_1 h2{
+    color: #777777;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.description_recipe_2{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+.description_recipe_2 h3{
+    font-size: 24px;
+    line-height: 28px;
+    padding: 0 8px 0 0;
+}
+
+.description_recipe_2 h4{
+    color: #999999;
+    font-size: 12px;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.topic-content{
+    color: #444444;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 20px;
+}
+
+#information .topic-content{
+    margin: 0px;
+}
+
+footer{
+    /*O "padding" com 23px em cima e embaixo, e 0px nas laterais*/
+    padding: 23px 0;
+    background: #EEEEEE;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

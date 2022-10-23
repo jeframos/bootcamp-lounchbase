@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+<div class="card table-container">
+    <table width="100%">
+        <thead>
+            <tr>
+                <th>PROFESSOR</th>
+                <th>ACOMPANHAMENTO</th>
+                <th>AÇÕES</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for teacher in teachers %}
+            <tr>
+                <td>
+                    <span style="background-image: url({{teacher.avatar_url}})"></span>
+                    {{teacher.name}}</td>
+                <td>{{teacher.occupationArea}}</td>
+                <td><a href="http:/teachers/{{teacher.id}}">VER</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
